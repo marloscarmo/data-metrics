@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>data-metrics example</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+  <button data-metrics="Documents|Click|JavaScript Ebook">Add metrics</button>
+  <button>No metrics</button>
+
+
+  <form action="/example.html" data-metrics="Signup|Submit|User Signup">
+    <input type="text">
+    <input type="submit" value="enviar">
+  </form>
+
+  <script type="text/javascript" src="data-metrics.js"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35549406-1', 'none');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
