@@ -8,22 +8,18 @@ DataMetrics.prototype = {
   getItems: function() {
     var self = this;
 
-    $('*[data-metrics]').click(function(e) {
+    $('*[data-metrics]').click(function() {
       if (!$(this).hasClass('sending-metrics')) {
         self.dispatchEvent($(this));
         $(this).addClass('sending-metrics');
         return false;
-      } else {
-        if ($(this).attr('href')) {
-          window.location.href = $(this).attr('href');
-        }
       }
     });
 
-    $('form[data-metrics]').submit(function(e) {
-      self.dispatchEvent($(this));
-      
+    $('form[data-metrics]').submit(function() {
       if (!$(this).hasClass('sending-metrics')) {
+        self.dispatchEvent($(this));
+        $(this).addClass('sending-metrics');
         return false;
       }
     });
@@ -32,8 +28,8 @@ DataMetrics.prototype = {
   dispatchEvent: function(elem) {
     var params = elem.attr('data-metrics').split('|');
     window.ga('send', 'event', params[0], params[1], params[2], { 'hitCallback': function() {
-      if (elem.prop('tagName') === 'A') {
-        elem.click();
+      if (elem.attr('href')) {
+        window.location.href = elem.attr('href');
       }
 
       if (elem.prop('tagName') === 'FORM') {
