@@ -8,7 +8,7 @@ DataMetrics.prototype = {
   getItems: function() {
     var self = this;
 
-    $('*[data-metrics]').click(function() {
+    $('*[data-metrics]').not('form[data-metrics]').click(function() {
       if (!$(this).hasClass('sending-metrics')) {
         self.dispatchEvent($(this));
         $(this).addClass('sending-metrics');
