@@ -31,3 +31,6 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+
+### NPM Modules ###
+node_modules

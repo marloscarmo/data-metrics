@@ -1,0 +1,35 @@
+{
+  "name": "data-metrics",
+  "title": "data-metrics",
+  "description": "DataMetrics is a data-attribute in HTML tags for register your metrics in Google Analytics",
+  "version": "0.5.1",
+  "homepage": "https://github.com/marloscarmo/data-metrics",
+  "author": {
+    "name": "Marlos Carmo",
+    "email": "marlos@gmail.com",
+    "url": "https://github.com/marloscarmo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marloscarmo/data-metrics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marloscarmo/data-metrics/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/marloscarmo/data-metrics/blob/master/LICENSE"
+    }
+  ],
+  "main": "data-metrics.min.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "devDependencies": {
+    "grunt-cli": "~0.1.7",
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0"
+  },
+  "keywords": []
+}
