@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 
       all: {
         files: {
-          'data-metrics.min.js': 'data-metrics.js'
+          'dist/data-metrics.min.js': 'src/data-metrics.js'
         }
       }
     }
