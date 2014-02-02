@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-Installing with Bower. See any examples of use [here](http://marloscarmo.github.io/data-metrics/)
+Installing with Bower. See any examples of use [here](http://marloscarmo.github.io/data-metrics/).
 
 ### Bower 
 
@@ -69,8 +69,8 @@ $('.click-image').click(function() {
 
 ## Contribuitors
 
-* [@marloscarmo](https://github.com/marloscarmo)
-* [@erickbelfy](https://github.com/erickbelfy)
+* Marlos Carmo [@marloscarmo](https://github.com/marloscarmo)
+* Erick Belfort [@erickbelfy](https://github.com/erickbelfy)
 
 
 ## License
