@@ -43,7 +43,7 @@ Add the attribute to the tag you want measure.
 ```html
 <button data-metrics="Documents|Click|JavaScript Ebook">Add metrics</button>
 ```
-
+Other examples [here](http://marloscarmo.github.io/data-metrics/).
 
 ### Using JavaScript
 
