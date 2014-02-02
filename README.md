@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-You can install using any methods:
+Installing with Bower. See any examples of use [here](http://marloscarmo.github.io/data-metrics/)
 
 ### Bower 
 
