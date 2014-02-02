@@ -14,7 +14,7 @@ bower install data-metrics
 
 ### Usage Example
 
-Add Google Analytics tag
+Add your Google Analytics tag.
 
 ```html
 <script>
@@ -23,10 +23,49 @@ Add Google Analytics tag
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-35549406-1', 'none');
+  ga('create', 'UA-XXXXXXXX-X', 'your URL');
   ga('send', 'pageview');
 </script>
 ```
+`'UA-XXXXXXXX-X'` Insert your GA id.
+
+`'your URL'` Insert your URL domain. For local tests not indetify your URL. Put `'none'
+
+***
+Insert the data-metrics script
+
+```html
+<script type="text/javascript" src="js/dist/data-metrics.js"></script>
+```
+***
+Add the attribute to the tag you want measure.
+
+```html
+<button class="btn btn-primary" data-metrics="Documents|Click|JavaScript Ebook">Add metrics</button>
+````
+
+
+### Using JavaScript
+
+You can use too JavaScript to measure custom items.
+
+**Pure JavaScript**
+```js
+document.querySelector('.click-image').onclick = function() {
+  dataMetrics.sendToGA('Images', 'Click', 'Marlos Carmo');
+}
+```
+
+**jQuery**
+```js
+$('.click-image').click(function() {
+  dataMetrics.sendToGA('Images', 'Click', 'Marlos Carmo');
+});
+```
+
+### Examples
+
+[See any examples of data-metrics use](https://github.com/marloscarmo/data-metrics/blob/master/example/example.html)
 
 ## Contribuitors
 
