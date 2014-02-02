@@ -65,7 +65,7 @@ $('.click-image').click(function() {
 
 ### Examples
 
-[See any examples of **data-metrics** use](https://github.com/marloscarmo/data-metrics/blob/master/example/example.html)
+[See any examples of **data-metrics** use](https://github.com/marloscarmo/data-metrics/blob/master/example/index.html)
 
 ## Contribuitors
 
