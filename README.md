@@ -29,10 +29,10 @@ Add your Google Analytics tag.
 ```
 `'UA-XXXXXXXX-X'` Insert your GA id.
 
-`'your URL'` Insert your URL domain. For local tests not indetify your URL. Put `'none'
+`'your URL'` Insert your URL domain. For local tests not indetify your URL, put  `'none'`.
 
 ***
-Insert the data-metrics script
+Insert the data-metrics script.
 
 ```html
 <script type="text/javascript" src="js/dist/data-metrics.js"></script>
@@ -65,7 +65,7 @@ $('.click-image').click(function() {
 
 ### Examples
 
-[See any examples of data-metrics use](https://github.com/marloscarmo/data-metrics/blob/master/example/example.html)
+[See any examples of **data-metrics** use](https://github.com/marloscarmo/data-metrics/blob/master/example/example.html)
 
 ## Contribuitors
 
