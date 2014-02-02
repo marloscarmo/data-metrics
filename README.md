@@ -1,200 +1,34 @@
-data-metrics
-===========
+# data-metrics v0.5.1
 
-"data-metrics" is a data-attribute in HTML tags for register your metrics in Google Analytics.
+> data-metrics is a data-attribute in HTML tags for register your metrics in Google Analytics.
 
+## Getting Started
 
-h1>data-metrics examples</h1>
-    <hr>
+You can install using any methods:
 
-    <h2>HTML Elements</h2>
+### Bower 
 
-    <h3>Button metrics</h3>
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <div class="row">
-          <div class="col-xs-12">
-            <p>
-            <button class="btn btn-primary" data-metrics="Documents|Click|JavaScript Ebook">Add metrics</button>
-            </p>
-            <pre>&lt;button class="btn btn-primary" <kbd>data-metrics="Documents|Click|JavaScript Ebook"</kbd>&gt;
-  Add metrics
-&lt;/button&gt;</pre>
-            <p>
-              <code><strong>Category:</strong> Documents</code>
-              <code><strong>Action:</strong> Click</code>
-              <code><strong>Label:</strong> JavaScript Ebook</code>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+`
+bower install data-metrics
+`
 
-    <h3>Link metrics <strong>with</strong> href</h3>
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <div class="row">
-          <div class="col-xs-12">
-            <p>
-              <a href="http://goo.gl/KnQBsO" data-metrics="Book|View|JavaScript Patterns">Link with href</a>
-            </p>
+### Usage Example
 
-            <pre>&lt;a href="http://www.amazon.com" <kbd>data-metrics="Book|View|JavaScript Patterns"</kbd>&gt;
-  Link with href
-&lt;/a&gt;</pre>
-            <p>
-              <code><strong>Category:</strong> Book</code>
-              <code><strong>Action:</strong> View</code>
-              <code><strong>Label:</strong> JavaScript Patterns</code>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <h3>Link metrics <strong>without</strong> href</h3>
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <div class="row">
-          <div class="col-xs-12">
-            <p>
-              <a data-metrics="Contact Page|Click|Map Address">Link without href</a>
-            </p>
+Add Google Analytics tag
 
-            <pre>&lt;a <kbd>data-metrics="Contact Page|Click|Map Address"</kbd>&gt;
-  Link without href
-&lt;/a&gt;</pre>
-            <p>
-              <code><strong>Category:</strong> Contact page</code>
-              <code><strong>Action:</strong> Click</code>
-              <code><strong>Label:</strong> Map Address</code>
-            </p>
-          </div>
-        </div>
-        
-      </div>
-    </div>
+```js
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <h3>Form metrics</h3>
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <div class="row">
-          <div class="col-xs-12">
-            <p>
-              <form action="example.html" data-metrics="Sign In|Submit">
-                <div class="row">
-                  <div class="col-xs-3">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Enter password">
-                    </div>
-                  </div>
-                </div>
-                <input type="submit" class="btn btn-primary" value="Sign in">
-              </form>
-            </p>
-            <pre>&lt;form action="example.html" <kbd>data-metrics="Sign In|Submit"</kbd>&gt;
-  &lt;div class="row"&gt;
-    &lt;div class="col-xs-3"&gt;
-      &lt;div class="form-group"&gt;
-        &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
-        &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"&gt;
-      &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;label for="exampleInputEmail1"&gt;Password&lt;/label&gt;
-        &lt;input type="password" class="form-control" id="exampleInputEmail1" placeholder="Enter password"&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;input type="submit" class="btn btn-primary" value="Sign in"&gt;
-&lt;/form&gt;</pre>
-            <p>
-              <code><strong>Category:</strong> Sign In</code>
-              <code><strong>Action:</strong> Submit</code>
-              <code><strong>Label:</strong> (not set)</code>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+  ga('create', 'UA-35549406-1', 'none');
+  ga('send', 'pageview');
+&lt;/script&gt;
+```
 
-    <br>
-    <h2>JavaScript Elements</h2>
-
-    <h3>Click metrics</h3>
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <div class="row">
-          <div class="col-xs-12">
-            <p>
-              <img src="https://0.gravatar.com/avatar/95c022832fc0ab4a3bda11ff5333b507?d=https%3A%2F%2Fidenticons.github.com%2F62f29a0f039a509d0ed354aa9d8bf541.png&r=x&s=100" alt="" class="click-image img-circle">
-            </p>
-          </div>
-
-          <div class="col-xs-6">
-            <h4>Pure JavaScript</h4>
-            <pre>document.querySelector('.click-image').onclick = function() {
-  <kbd>dataMetrics.sendToGA('Images', 'Click', 'Marlos Carmo');</kbd>
-}</pre>
-          </div>
-
-          <div class="col-xs-6">
-            <h4>jQuery</h4>
-            <pre>$('.click-image').click(function() {
-  <kbd>dataMetrics.sendToGA('Images', 'Click', 'Marlos Carmo');</kbd>
-});</pre>
-          </div>
-          <div class="col-xs-12">
-            <p>
-              <code><strong>Category:</strong> Images</code>
-              <code><strong>Action:</strong> Click</code>
-              <code><strong>Label:</strong> Marlos Carmo</code>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <h3>Hover metrics</h3>
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <div class="row">
-          <div class="col-xs-12">
-            <p>
-            <img src="https://2.gravatar.com/avatar/68f46438b401267c2774f8c17376c472?d=https%3A%2F%2Fidenticons.github.com%2F8c52b2fd4f90e171360fd4d798db6a3d.png&r=x&s=100" alt="" class="hover-image img-circle">
-            </p>
-          </div>
-
-          <div class="col-xs-6">
-            <h4>Pure JavaScript</h4>
-            <pre>document.querySelector('.hover-image').onmouseover = function() {
-  <kbd>dataMetrics.sendToGA('Images', 'Hover', 'Erick Belfort');</kbd>
-}</pre>
-          </div>
-
-          <div class="col-xs-6">
-            <h4>jQuery</h4>
-            <pre>$('.hover-image').hover(function() {
-  <kbd>dataMetrics.sendToGA('Images', 'Hover', 'Erick Belfort');</kbd>
-});</pre>
-          </div>
-
-          <div class="col-xs-12">
-            <p>
-              <code><strong>Category:</strong> Images</code>
-              <code><strong>Action:</strong> Hover</code>
-              <code><strong>Label:</strong> Erick Belfort</code>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-### Contribuitors
+## Contribuitors
 
 * [@marloscarmo](https://github.com/marloscarmo)
 * [@erickbelfy](https://github.com/erickbelfy)
