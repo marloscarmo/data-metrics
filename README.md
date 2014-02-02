@@ -41,8 +41,8 @@ Insert the data-metrics script.
 Add the attribute to the tag you want measure.
 
 ```html
-<button class="btn btn-primary" data-metrics="Documents|Click|JavaScript Ebook">Add metrics</button>
-````
+<button data-metrics="Documents|Click|JavaScript Ebook">Add metrics</button>
+```
 
 
 ### Using JavaScript
