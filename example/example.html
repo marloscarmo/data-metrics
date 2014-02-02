@@ -3,23 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <title>data-metrics example</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
 </head>
 <body>
-  <button data-metrics="Documents|Click|JavaScript Ebook" class="test">Add metrics</button>
-  <button>No metrics</button>
+  <div class="container">
+    <h1>data-metrics examples</h1>
+    <hr>
 
-  <br><br>
+    <h2>Button metrics</h2>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+            <button class="btn btn-primary" data-metrics="Documents|Click|JavaScript Ebook">Add metrics</button>
+            </p>
+            <pre>&lt;button class="btn btn-primary" <strong>data-metrics="Documents|Click|JavaScript Ebook"</strong>&gt;Add metrics&lt;/button&gt;</pre>
+            <p>
+              <code><strong>Category:</strong> Documents</code>
+              <code><strong>Action:</strong> Click</code>
+              <code><strong>Label:</strong> JavaScript Ebook</code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <a href="http://www.globo.com" data-metrics="Documents|Click|JavaScript Ebook">Link with href</a>
-  <br><br>
+    <h2>Link metrics</h2>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+              <a href="https://github.com/marloscarmo/data-metrics" data-metrics="Documents|Click|JavaScript Ebook">Link with href</a>
+            </p>
 
-  <a href="http://www.globo.com" data-metrics="Documents|Click|JavaScript Ebook">Link with onclick</a>
-  <br><br>
+            <pre>&lt;button class="btn btn-primary" <strong>data-metrics="Documents|Click|JavaScript Ebook"</strong>&gt;Add metrics&lt;/button&gt;</pre>
+            <p>
+              <code><strong>Category:</strong> Documents</code>
+              <code><strong>Action:</strong> Click</code>
+              <code><strong>Label:</strong> JavaScript Ebook</code>
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+              <a href="https://github.com/marloscarmo/data-metrics" data-metrics="Documents|Click|JavaScript Ebook">Link with href</a>
+            </p>
 
-  <form action="example.html" data-metrics="Signup|Submit|User Signup">
-    <input type="text">
-    <input type="submit" value="enviar">
-  </form>
+            <pre>&lt;button class="btn btn-primary" <strong>data-metrics="Documents|Click|JavaScript Ebook"</strong>&gt;Add metrics&lt;/button&gt;</pre>
+            <p>
+              <code><strong>Category:</strong> Documents</code>
+              <code><strong>Action:</strong> Click</code>
+              <code><strong>Label:</strong> JavaScript Ebook</code>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <h2>Form metrics</h2>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+              <form action="example.html" data-metrics="Signup|Submit|User Signup">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Enter password">
+                    </div>
+                  </div>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Sign in">
+              </form>
+            </p>
+            <pre>&lt;button class="btn btn-primary" <strong>data-metrics="Documents|Click|JavaScript Ebook"</strong>&gt;Add metrics&lt;/button&gt;</pre>
+            <p>
+              <code><strong>Category:</strong> Documents</code>
+              <code><strong>Action:</strong> Click</code>
+              <code><strong>Label:</strong> JavaScript Ebook</code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script type="text/javascript" src="../src/data-metrics.js"></script>
 
