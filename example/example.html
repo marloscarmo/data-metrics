@@ -18,7 +18,9 @@
             <p>
             <button class="btn btn-primary" data-metrics="Documents|Click|JavaScript Ebook">Add metrics</button>
             </p>
-            <pre>&lt;button class="btn btn-primary" <strong>data-metrics="Documents|Click|JavaScript Ebook"</strong>&gt;Add metrics&lt;/button&gt;</pre>
+            <pre>&lt;button class="btn btn-primary" <kbd>data-metrics="Documents|Click|JavaScript Ebook"</kbd>&gt;
+  Add metrics
+&lt;/button&gt;</pre>
             <p>
               <code><strong>Category:</strong> Documents</code>
               <code><strong>Action:</strong> Click</code>
@@ -35,10 +37,12 @@
         <div class="row">
           <div class="col-xs-12">
             <p>
-              <a href="https://github.com/marloscarmo/data-metrics" data-metrics="Documents|Click|JavaScript Ebook">Link with href</a>
+              <a href="http://www.amazon.com" data-metrics="Documents|Click|JavaScript Ebook">Link with href</a>
             </p>
 
-            <pre>&lt;button class="btn btn-primary" <strong>data-metrics="Documents|Click|JavaScript Ebook"</strong>&gt;Add metrics&lt;/button&gt;</pre>
+            <pre>&lt;a href="http://www.amazon.com" <kbd>data-metrics="Documents|Click|JavaScript Ebook"</kbd>&gt;
+  Link with href
+&lt;/a&gt;</pre>
             <p>
               <code><strong>Category:</strong> Documents</code>
               <code><strong>Action:</strong> Click</code>
@@ -46,14 +50,18 @@
             </p>
           </div>
         </div>
+        
         <hr>
+        
         <div class="row">
           <div class="col-xs-12">
             <p>
-              <a href="https://github.com/marloscarmo/data-metrics" data-metrics="Documents|Click|JavaScript Ebook">Link with href</a>
+              <a data-metrics="Documents|Click|JavaScript Ebook">Link without href</a>
             </p>
 
-            <pre>&lt;button class="btn btn-primary" <strong>data-metrics="Documents|Click|JavaScript Ebook"</strong>&gt;Add metrics&lt;/button&gt;</pre>
+            <pre>&lt;a <kbd>data-metrics="Documents|Click|JavaScript Ebook"</kbd>&gt;
+  Link without href
+&lt;/a&gt;</pre>
             <p>
               <code><strong>Category:</strong> Documents</code>
               <code><strong>Action:</strong> Click</code>
@@ -87,7 +95,21 @@
                 <input type="submit" class="btn btn-primary" value="Sign in">
               </form>
             </p>
-            <pre>&lt;button class="btn btn-primary" <strong>data-metrics="Documents|Click|JavaScript Ebook"</strong>&gt;Add metrics&lt;/button&gt;</pre>
+            <pre>&lt;form action="example.html" <kbd>data-metrics="Signup|Submit|User Signup"</kbd>&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-xs-3"&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+        &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="exampleInputEmail1"&gt;Password&lt;/label&gt;
+        &lt;input type="password" class="form-control" id="exampleInputEmail1" placeholder="Enter password"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;input type="submit" class="btn btn-primary" value="Sign in"&gt;
+&lt;/form&gt;</pre>
             <p>
               <code><strong>Category:</strong> Documents</code>
               <code><strong>Action:</strong> Click</code>
