@@ -34,3 +34,7 @@ $RECYCLE.BIN/
 
 ### NPM Modules ###
 node_modules
+
+### Apache ###
+access_log
+error_log
