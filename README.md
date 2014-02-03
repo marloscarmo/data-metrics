@@ -71,6 +71,7 @@ $('.click-image').click(function() {
 
 * Marlos Carmo [@marloscarmo](https://github.com/marloscarmo)
 * Erick Belfort [@erickbelfy](https://github.com/erickbelfy)
+* Ruy Adorno [@ruyadorno](https://github.com/ruyadorno)
 
 
 ## License
