@@ -54,6 +54,28 @@
         </div>
       </div>
     </div>
+
+    <h3>Link metrics <strong>with</strong> href and target="_blank"</h3>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+              <a href="http://goo.gl/KnQBsO" target="_blank" data-metrics="Book|View|JavaScript Patterns">Link with href and target="_blank"</a>
+            </p>
+
+            <pre>&lt;a href="http://www.amazon.com" <kbd>data-metrics="Book|View|JavaScript Patterns"</kbd>&gt;
+  Link with href
+&lt;/a&gt;</pre>
+            <p>
+              <code><strong>Category:</strong> Book</code>
+              <code><strong>Action:</strong> View</code>
+              <code><strong>Label:</strong> JavaScript Patterns</code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <h3>Link metrics <strong>without</strong> href</h3>
     <div class="panel panel-default">
@@ -198,7 +220,8 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="http://marloscarmo.github.io/data-metrics/javascripts/data-metrics.min.js"></script>
+  
+  <script type="text/javascript" src="../src/data-metrics.js"></script>
 
   <script type="text/javascript">
     document.querySelector('.click-image').onclick = function() {

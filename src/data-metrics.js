@@ -36,7 +36,11 @@
 
         this.sendToGA(params[0], params[1], params[2], elem);
         elem.classList.add('sending-metrics');
-        return false;
+
+        if (!elem.getAttribute('target')) {
+          e.preventDefault();
+          return false;
+        }
       }
     },
 
@@ -51,7 +55,7 @@
     },
 
     onEventIsDispatched: function (elem) {
-      if (elem.getAttribute('href')) {
+      if ( (elem.getAttribute('href')) && (!elem.getAttribute('target')) ) {
         window.location.href = elem.getAttribute('href');
       } else if (elem.tagName === 'FORM') {
         elem.submit();
