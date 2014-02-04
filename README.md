@@ -1,4 +1,4 @@
-# data-metrics v0.5.1
+# data-metrics v0.6.0
 
 > data-metrics is a data-attribute in HTML tags for register your metrics in Google Analytics.
 
@@ -47,7 +47,7 @@ Other examples [here](http://marloscarmo.github.io/data-metrics/).
 
 ### Using JavaScript
 
-You can use too JavaScript to measure custom items.
+You can use JavaScript to measure custom items.
 
 **Pure JavaScript**
 ```js
