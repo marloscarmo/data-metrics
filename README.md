@@ -2,13 +2,14 @@
 
 version: 0.6.2
 
-> data-metrics is a data-attribute in HTML tags for register your metrics in Google Analytics.
+> data-metrics is a [data-attribute](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes) that allows you to easily track Google Analytics metrics in your HTML page.
+
 
 ## Getting Started
 
-Installing with Bower. See any examples of use [here](http://marloscarmo.github.io/data-metrics/).
+See examples of use [here](http://marloscarmo.github.io/data-metrics/).
 
-### Bower 
+### Installing with Bower
 
 `
 bower install data-metrics
@@ -16,7 +17,7 @@ bower install data-metrics
 
 ### Usage Example
 
-Add your Google Analytics tag.
+Add your Google Analytics tag:
 
 ```html
 <script>
@@ -29,29 +30,31 @@ Add your Google Analytics tag.
   ga('send', 'pageview');
 </script>
 ```
-`'UA-XXXXXXXX-X'` Insert your GA id.
+Replace `'UA-XXXXXXXX-X'` with your GA id.
 
-`'your URL'` Insert your URL domain. For local tests not indetify your URL, put  `'none'`.
+`'your URL'` Insert your URL domain or set it as `'none'` for local testing.
 
-***
+- - -
 Insert the data-metrics script.
 
 ```html
-<script type="text/javascript" src="js/dist/data-metrics.js"></script>
+<script type="text/javascript" src="bower_components/data-metrics/dist/data-metrics.js"></script>
 ```
-***
-Add the attribute to the tag you want measure.
+- - -
+Add the **data-metrics** attribute and its values on the element to be tracked.
 
 ```html
 <button data-metrics="Documents|Click|JavaScript Ebook">Add metrics</button>
 ```
-Other examples [here](http://marloscarmo.github.io/data-metrics/).
 
-### Using JavaScript
+Browse other examples [here](http://marloscarmo.github.io/data-metrics/).
 
-You can use JavaScript to measure custom items.
+## Using the JavaScript API
 
-**Pure JavaScript**
+You can also use the programatically API to track custom items.
+
+**Vanilla JavaScript**
+
 ```js
 document.querySelector('.click-image').onclick = function() {
   dataMetrics.sendToGA('Images', 'Click', 'Marlos Carmo');
@@ -59,6 +62,7 @@ document.querySelector('.click-image').onclick = function() {
 ```
 
 **jQuery**
+
 ```js
 $('.click-image').click(function() {
   dataMetrics.sendToGA('Images', 'Click', 'Marlos Carmo');
@@ -67,7 +71,7 @@ $('.click-image').click(function() {
 
 ### Examples
 
-[See any examples of **data-metrics** use](http://marloscarmo.github.io/data-metrics/)
+[See more examples of **data-metrics** usage](http://marloscarmo.github.io/data-metrics/)
 
 ## Contribuitors
 
