@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     // Release task
     bump: {
       options: {
-        files: ['package.json', 'bower.json'],
+        files: ['package.json', 'bower.json', 'README.md'],
         updateConfigs: [],
         commit: true,
         commitMessage: 'Release v%VERSION%',
