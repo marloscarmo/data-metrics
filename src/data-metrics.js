@@ -13,7 +13,7 @@
         addEventListeners: function () {
             var elements = document.querySelectorAll('*[data-metrics]');
             for (var i = 0; i < elements.length; i++) {
-                if (!this.isSubmitInput(elements[i])) {
+                if (!this.isForm(elements[i])) {
                     elements[i].addEventListener('click', this.appendEvent.bind(this), false);
                 } else {
                     elements[i].onsubmit = this.appendEvent.bind(this);
@@ -21,7 +21,7 @@
             }
         },
 
-        isSubmitInput: function (elem) {
+        isForm: function (elem) {
             if (elem.tagName === 'FORM') {
                 return true;
             } else {
@@ -37,7 +37,7 @@
             }
         },
 
-        linkHasBlank: function (elem) {
+        hasBlank: function (elem) {
             if (elem.getAttribute('target')) {
                 return true;
             } else {
@@ -60,7 +60,7 @@
                 this.sendToGA(params[0], params[1], params[2], elem);
                 elem.classList.add('sending-metrics');
 
-                if (!this.isSubmitInput(elem) && !this.linkHasBlank(elem)) {
+                if (!this.isForm(elem) && !this.hasBlank(elem)) {
                     e.preventDefault();
                     return false;
                 }
@@ -81,9 +81,9 @@
         },
 
         onEventIsDispatched: function (elem) {
-            if (this.isLink(elem) && !this.linkHasBlank(elem)) {
+            if (this.isLink(elem) && !this.hasBlank(elem)) {
                 window.location.href = elem.getAttribute('href');
-            } else if (this.isSubmitInput(elem)) {
+            } else if (this.isForm(elem)) {
                 elem.submit();
             }
 
