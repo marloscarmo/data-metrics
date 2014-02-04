@@ -53,7 +53,7 @@
 
         sendToGA: function (category, action, label, elem) {
             var self = this;
-            ga('send', 'event', category, action, label, { 'hitCallback': function () {
+            window.ga('send', 'event', category, action, label, { 'hitCallback': function () {
                 self.onHitCallback(elem);
             }});
         },

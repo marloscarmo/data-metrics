@@ -1,6 +1,6 @@
 {
   "name": "data-metrics",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "main": "src/data-metrics.js",
   "homepage": "https://github.com/marloscarmo/data-metrics",
   "description": "DataMetrics is a data-attribute in HTML tags for register your metrics in Google Analytics",

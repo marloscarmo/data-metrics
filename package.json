@@ -2,7 +2,7 @@
   "name": "data-metrics",
   "title": "data-metrics",
   "description": "DataMetrics is a data-attribute in HTML tags for register your metrics in Google Analytics",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "homepage": "https://github.com/marloscarmo/data-metrics",
   "author": {
     "name": "Marlos Carmo",

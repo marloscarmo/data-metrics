@@ -1,6 +1,6 @@
 # data-metrics
 
-version: 0.6.3
+version: 0.6.4
 
 > data-metrics is a [data-attribute](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes) that allows you to easily track Google Analytics metrics in your HTML page.
 
