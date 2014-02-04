@@ -7,7 +7,7 @@ version: 0.6.3
 
 ## Getting Started
 
-See examples of use [here](http://marloscarmo.github.io/data-metrics/).
+See examples of use [here](http://marloscarmo.github.io/data-metrics/bower_components/data-metrics/example/).
 
 ### Installing with Bower
 
@@ -47,7 +47,7 @@ Add the **data-metrics** attribute and its values on the element to be tracked.
 <button data-metrics="Documents|Click|JavaScript Ebook">Add metrics</button>
 ```
 
-Browse other examples [here](http://marloscarmo.github.io/data-metrics/).
+Browse other examples [here](http://marloscarmo.github.io/data-metrics/bower_components/data-metrics/example/).
 
 ## Using the JavaScript API
 
@@ -71,7 +71,7 @@ $('.click-image').click(function() {
 
 ### Examples
 
-[See more examples of **data-metrics** usage](http://marloscarmo.github.io/data-metrics/)
+[See more examples of **data-metrics** usage](http://marloscarmo.github.io/data-metrics/bower_components/data-metrics/example/)
 
 ## Contribuitors
 
