@@ -29,22 +29,6 @@
             }
         },
 
-        isLink: function (elem) {
-            if (elem.getAttribute('href')) {
-                return true;
-            } else {
-                return false;
-            }
-        },
-
-        hasBlank: function (elem) {
-            if (elem.getAttribute('target')) {
-                return true;
-            } else {
-                return false;
-            }
-        },
-
         appendEvent: function (e) {
             var elem = e.currentTarget;
 
@@ -60,7 +44,7 @@
                 this.sendToGA(params[0], params[1], params[2], elem);
                 elem.classList.add('sending-metrics');
 
-                if (!this.isForm(elem) && !this.hasBlank(elem)) {
+                if (!this.isForm(elem) && !elem.getAttribute('target')) {
                     e.preventDefault();
                     return false;
                 }
@@ -81,7 +65,7 @@
         },
 
         onEventIsDispatched: function (elem) {
-            if (this.isLink(elem) && !this.hasBlank(elem)) {
+            if (elem.getAttribute('href') && !elem.getAttribute('target')) {
                 window.location.href = elem.getAttribute('href');
             } else if (this.isForm(elem)) {
                 elem.submit();

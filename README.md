@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # data-metrics v0.6.0
+=======
+# data-metrics
+
+version: 0.5.1
+>>>>>>> c782bdfd1cd0fd64331a0a985ea0c0ba1da548eb
 
 > data-metrics is a data-attribute in HTML tags for register your metrics in Google Analytics.
 
