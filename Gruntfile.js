@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     bump: {
       options: {
         files: ['package.json', 'bower.json', 'README.md'],
-        updateConfigs: [],
+        updateConfigs: ['pkg'],
         commit: true,
         commitMessage: 'Release v%VERSION%',
         commitFiles: ['-a'], // '-a' for all files
@@ -39,5 +39,9 @@ module.exports = function(grunt) {
   //Tasks.
   grunt.registerTask('default', ['uglify']);
 
-  grunt.registerTask('release', ['bump']);
+  grunt.registerTask('release', [
+    'bump-only',
+    'uglify',
+    'bump-commit'
+  ]);
 };
