@@ -73,7 +73,7 @@ $('.click-image').click(function() {
 
 [See more examples of **data-metrics** usage](http://marloscarmo.github.io/data-metrics/bower_components/data-metrics/example/)
 
-## Contribuitors
+## Contributors
 
 * Marlos Carmo [@marloscarmo](https://github.com/marloscarmo)
 * Erick Belfort [@erickbelfy](https://github.com/erickbelfy)
