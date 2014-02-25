@@ -73,7 +73,7 @@ $('.click-image').click(function() {
 
 [See more examples of **data-metrics** usage](http://marloscarmo.github.io/data-metrics/)
 
-## Contribuitors
+## Contributors
 
 * Marlos Carmo [@marloscarmo](https://github.com/marloscarmo)
 * Erick Belfort [@erickbelfy](https://github.com/erickbelfy)
